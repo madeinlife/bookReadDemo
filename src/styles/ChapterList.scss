@@ -1,0 +1,56 @@
+
+.chapter-list{
+    .title{
+        border-bottom: 1px solid #4A90E2;
+        .mulu {
+            width:100px;
+            background-color: #4A90E2;
+            color: #FFFFFF;
+            font-size: 16px;
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+    .chapter{
+        border-bottom: 1px dashed rgba(0,0,0,0.15);
+        h3{
+            margin: 15px 10px 5px 10px;
+            color:#444;
+        }
+        ul {
+            overflow: auto;
+            padding-left: 0px;
+            margin: 10px 0px 10px 20px;
+            li{
+                list-style-type: none;
+                display: inline-block;
+                float: left;
+                width: 155px;
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #424242;
+                    line-height: 20px;
+                    width: 155px;
+                    margin: 5px 0;
+                    cursor: pointer;
+                }
+                a:hover{
+                    color: #4A90E2;
+                }
+                span.lost{
+                    cursor:no-drop;
+                    color:#424242;
+                    background-color: #ccc;
+                    line-height: 20px;
+                    padding: 2px 5px;
+                    border-radius: 3px;
+                    margin: 5px 0;
+                }
+
+            }
+        }
+
+    }
+}

@@ -11,3 +11,6 @@ Book reading,Use React.js.
 2. 进入项目：`cd bookReadDemo`;
 3. 安装库：`npm install`;
 4. 启动项目：`npm start`;
+
+# 效果截图
+![image](./demo.png)

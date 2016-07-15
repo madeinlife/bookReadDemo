@@ -1,0 +1,140 @@
+.header{
+    height: 90px;
+    width: 1024px;
+    margin: 0 auto;
+    .logo {
+        img{
+            width:78px;
+            padding-top: 5px;
+        }
+    }
+    .nav_ul{
+        height: 40px;
+        font-size: 14px;
+        list-style: none;
+        padding-top: 10px;
+        color: #aaa;
+        line-height: 38px;
+        li{
+            float: left;
+            a{
+                color: #222;
+                display: inline-block;
+                margin: 0 14px;
+            }
+            // a:hover {
+            //     color: #4A90E2;
+            //     font-size: 18px;
+            //     border-bottom: solid 2px #4A90E2;
+            // }
+        }
+        li:hover a,li a.active{
+            color: #4A90E2;
+            font-size: 18px;
+            border-bottom: 2px solid #4A90E2;
+        }
+
+        li.active a{
+            color: #4A90E2;
+            font-size: 18px;
+            border-bottom: solid 2px #4A90E2;
+        }
+
+        li.tc:hover .tc-wrap{
+            display: block;
+        }
+        li.tc {
+            .icon{
+                position: absolute;
+                top:-20px;
+                left: 30px;
+                width: 39px;
+                height: 21px;
+                background: url(../images/icon_up.png) no-repeat;
+            }
+            .tc-wrap{
+                cursor: pointer;
+                width:320px;
+                height: 160px;
+                display: none;
+                top: 75px;
+                position: absolute;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+                z-index: 2;
+                background-color: #FFFFFF;
+                img{
+                    width: 150px;
+                    height: 150px;
+                    margin: 5px;
+                }
+                .right{
+                    margin-right: 10px;
+                    h4{
+                        color: #444;
+                        margin: 5px;
+                    }
+                    .ios{
+                        background: url(../images/app_bg.png) no-repeat;
+                        width: 150px;
+                        height: 45px;
+                        background-position: 0 -28px;
+                        margin-bottom: 5px;
+                    }
+                    .android{
+                        background: url(../images/app_bg.png) no-repeat;
+                        width: 150px;
+                        height: 45px;
+                        background-position: 0 -75px;
+                        margin-bottom: 5px;
+                    }
+                    a{
+                        display: block;
+                        width: 150px;
+                        height: 45px;
+                        border: none;
+                    }
+                    p{
+                        width: 150px;
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+.nav{
+    background-color: #4A90E2;
+    height: 40px;
+    ul{
+        list-style: none;
+        font-size: 15px;
+        height: 40px;
+        background-color: #4A90E2;
+        padding-left: 0;
+        li{
+            float: left;
+            width: 125px;
+            height: 40px;
+            a{
+                display: block;
+                text-align: center;
+                color: #FFFFFF;
+                line-height: 40px;
+            }
+            a.active,a:hover{
+                background-color: #1a4d89;
+                // background-color: #23508A;
+            }
+        }
+
+    }
+}
