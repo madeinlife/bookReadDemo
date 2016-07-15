@@ -20,7 +20,7 @@ class Category extends React.Component{
             rows = this.props.category.subcategory.map((subcategory,index) => {
                 return(
                     <li key={index} >
-                        <Link to={`/book/list/${this.props.category.category}/${subcategory}类`}>
+                        <Link to={`/list/${this.props.category.category}/${subcategory}类`}>
                             {subcategory}
                         </Link>
                     </li>
@@ -36,7 +36,7 @@ class Category extends React.Component{
             <div className="category">
                 <div className="category-title">
                     <span>
-                        <Link to={`/book/list/${this.props.category.category}`}>
+                        <Link to={`/list/${this.props.category.category}`}>
                             {this.props.category.category}
                         </Link>
                     </span>

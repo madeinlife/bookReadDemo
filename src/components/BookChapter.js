@@ -79,13 +79,13 @@ class BookChapter extends React.Component{
                 </div>
                 <div className='changeChapter' key={2}>
                     <div className='pre changeButton' key={0}>
-                        {this.state.chapterInfo.pre ? <Link to={`/book/chapter/${this.state.chapterInfo.pre}`}>
+                        {this.state.chapterInfo.pre ? <Link to={`/chapter/${this.state.chapterInfo.pre}`}>
                             上一章
                         </Link> : <a className='no'>上一章</a>}
 
                     </div>
                     <div className='next changeButton'>
-                        {this.state.chapterInfo.next ? <Link to={`/book/chapter/${this.state.chapterInfo.next}`}>
+                        {this.state.chapterInfo.next ? <Link to={`/chapter/${this.state.chapterInfo.next}`}>
                             下一章
                         </Link> : <a className='no'>下一章</a>}
                     </div>

@@ -14,7 +14,7 @@ import BookChapterPage from './components/BookChapterPage';
 
 ReactDOM.render((
   <Router history={browserHistory}>
-    <Route path='/book' component={Home}>
+    <Route path='/' component={Home}>
       <IndexRoute component={BooksPage} />
     //   <Route path='list/category/:subcategory' component={BooksPage} />
       <Route path='list' component={BooksPage}>

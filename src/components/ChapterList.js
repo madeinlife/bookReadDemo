@@ -9,7 +9,7 @@ class ChapterLiView extends React.Component{
             if(chapter.id){
                 return(
                     <li key={index} >
-                        <Link to={`/book/chapter/${chapter.id}`}>
+                        <Link to={`/chapter/${chapter.id}`}>
                             {chapter.title}
                         </Link>
                     </li>

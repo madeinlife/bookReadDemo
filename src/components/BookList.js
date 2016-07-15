@@ -112,13 +112,13 @@ class BookList extends React.Component {
             return (
                 <div key={index} className='book-item clearfix'>
                     <div className='book-img'>
-                        <Link to={`/book/info/${book._id}`}>
+                        <Link to={`/info/${book._id}`}>
                             <img src={'http://guoxuebuluo.com/img/books/' + book.image} />
                         </Link>
                     </div>
                     <div className='book-info'>
                         <div className='title'>
-                            <Link to={`/book/info/${book._id}`}>
+                            <Link to={`/info/${book._id}`}>
                                 {book.title}
                             </Link>
                         </div>
