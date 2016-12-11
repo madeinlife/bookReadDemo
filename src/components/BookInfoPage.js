@@ -1,4 +1,3 @@
-'use strict';
 import React from 'react';
 import BookInfo from './BookInfo';
 import AuthorInfo from './AuthorInfo';
@@ -73,7 +72,7 @@ class BookInfoPage extends React.Component{
 
     render(){
 
-        if(this.state.loaded == false){
+        if(this.state.loaded === false){
             return(
                 <div className='container'>
                     <div className='main'>

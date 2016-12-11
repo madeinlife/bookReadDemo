@@ -1,8 +1,9 @@
-'use strict'
 import React from 'react';
 import Header from './Header.js';
 import {Link } from 'react-router';
-require('styles/Home.scss');
+// import '../styles/Home.css';
+
+// import BooksPage from './BooksPage';
 
 class Nav extends React.Component{
     render(){
@@ -11,7 +12,7 @@ class Nav extends React.Component{
                 <div className='wrap'>
                     <ul>
                         <li>
-                            <a href='http://localhost:8000/' className='active'>首页</a>
+                            <a href='/' className='active'>首页</a>
                         </li>
                         <li>
                             <Link to='/list/子部'  >子部</Link>

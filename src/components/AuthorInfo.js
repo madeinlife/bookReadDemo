@@ -1,6 +1,4 @@
-'use strict';
 import React from 'react';
-require('styles/AuthorInfo.scss');
 class AuthorInfo extends React.Component{
 
     render(){
@@ -8,7 +6,8 @@ class AuthorInfo extends React.Component{
         if(this.props.author.image){
             authorImgView = (
                 <div className='author-img' key={1}>
-                    <img src={'http://guoxuebuluo.com/img/authors/' + this.props.author.image} />
+                    <img src={'http://guoxuebuluo.com/img/authors/' + this.props.author.image} 
+                        alt='{this.props.author.name}' />
                 </div>
             );
         }

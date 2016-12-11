@@ -1,6 +1,4 @@
 require('normalize.css/normalize.css');
-require('styles/BookList.scss');
-
 import React from 'react';
 import Loading from './Loading';
 import {Link} from 'react-router';
@@ -90,11 +88,11 @@ class BookList extends React.Component {
         }
     }
     render(){
-        if(this.state.loaded == false){
+        if(this.state.loaded === false){
             return <Loading />
         }
         var isDoneView;
-        if(this.state.nextPage == false){
+        if(this.state.nextPage === false){
             isDoneView = (
                 <div className='more'>
                     全部加载完毕，总共{this.state.responseData.length}本书
@@ -113,7 +111,7 @@ class BookList extends React.Component {
                 <div key={index} className='book-item clearfix'>
                     <div className='book-img'>
                         <Link to={`/info/${book._id}`}>
-                            <img src={'http://guoxuebuluo.com/img/books/' + book.image} />
+                            <img src={'http://guoxuebuluo.com/img/books/' + book.image} alt='{book.title}' />
                         </Link>
                     </div>
                     <div className='book-info'>

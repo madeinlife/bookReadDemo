@@ -1,4 +1,3 @@
-'use strict'
 import React from 'react';
 
 var loadingImg = require('../images/loading.gif');
@@ -23,8 +22,8 @@ class Loading extends React.Component{
     render(){
         return(
             <div style={styles.container}>
-                <img src ={loadingImg} style={styles.loadingImg}/>
-                <img src='/images/logo_grey.png' style={styles.logoGreyImg} />
+                <img src={loadingImg} style={styles.loadingImg} alt='loading' />
+                <img src='/images/logo_grey.png' style={styles.logoGreyImg} alt='logo' />
             </div>
         );
     }
