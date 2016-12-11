@@ -1,6 +1,4 @@
-'use strict';
 import React from 'react';
-require('styles/BookInfo.scss');
 import ChapterList from './ChapterList';
 class BookInfo extends React.Component{
     //实例化需要传递：bookinfo{title,image,summary,chapters,subchapter}
@@ -41,7 +39,8 @@ class BookInfo extends React.Component{
                         作者:{this.props.bookinfo.author ? this.props.bookinfo.author.name : '佚名'}
                     </span>
                     <div className='book-img'>
-                        <img src={'http://guoxuebuluo.com/img/books/' + this.props.bookinfo.image} />
+                        <img src={'http://guoxuebuluo.com/img/books/' + this.props.bookinfo.image} 
+                        alt='{this.props.bookinfo.title}' />
                     </div>
                     <div className='summary'>
                         {this.props.bookinfo.summary}

@@ -1,7 +1,6 @@
-'use strict';
 import React from 'react';
 // import {Link} from 'react-router';
-// var weixinImg = require('../images/weixin.jpg');
+// var weixinImg = require('../images/image.png');
 class Header extends React.Component{
     render(){
         return(
@@ -12,23 +11,23 @@ class Header extends React.Component{
                     </div>
                    <ul className='nav_ul fr'>
                        <li className='tc'>
-                           <a href='javascript:;'>
+                           <a >
                               App下载
                            </a>
                            <div className='tc'>
                                <div className='tc-wrap'>
                                    <i className='icon'></i>
                                    <div className='left fl'>
-                                       <img src='/images/image.png' />
+                                       <img src='/images/image.png' alt="app下载"/>
                                    </div>
                                    <div className='right fr'>
                                        <h4>扫码下载App</h4>
                                        <div className='ios'>
-                                            <a href="javascript:;">
+                                            <a >
                                             </a>
                                        </div>
                                        <div className='android'>
-                                            <a href="javascript:;">
+                                            <a >
                                             </a>
                                        </div>
                                    </div>
@@ -36,14 +35,14 @@ class Header extends React.Component{
                            </div>
                        </li>
                        <li className='tc'>
-                           <a href='javascript:;'>
+                           <a >
                               微信公众号
                            </a>
                            <div className='tc'>
                                <div className='tc-wrap'>
                                    <i className='icon'></i>
                                    <div className='left fl'>
-                                       <img src='/images/image.png' />
+                                       <img src='/images/image.png' alt='微信公众号' />
                                    </div>
                                    <div className='right fr'>
                                        <h4>微信公众号</h4>
@@ -62,8 +61,8 @@ class Header extends React.Component{
                            </a>
                        </li>
                        <li>
-                           <a href='javascript:;'>
-                              国学
+                           <a >
+                              其它
                            </a>
                        </li>
                    </ul>

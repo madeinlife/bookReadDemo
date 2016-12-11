@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router';
-require('styles/ChapterList.scss');
 
 class ChapterLiView extends React.Component{
     // ChapterLiView 渲染ul的li，需要传入chapters数组
@@ -35,11 +34,11 @@ class ChapterList extends React.Component{
     //chapters是章节列表数据
     //subchapter是判断章节数据是否分级的。
     // 需要传入handleLiClick方法属性
-    constructor(props){
-        super(props);
-        // console.log(this.props.chapters);
-        // console.log(this.props.subchapter);
-    }
+    // constructor (props) {
+    //     super(props);
+    //     // console.log(this.props.chapters);
+    //     // console.log(this.props.subchapter);
+    // }
     render(){
         var chapterListViews;
         if(this.props.subchapter){

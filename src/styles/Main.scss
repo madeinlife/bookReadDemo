@@ -1,3 +1,14 @@
+@charset "UTF-8";
+
+@import "scss/_Home";
+@import "scss/_BookList";
+@import "scss/_BookInfo";
+@import "scss/_ChapterList";
+@import "scss/_BooksCategory";
+@import "scss/_BooksPage";
+@import "scss/_ChapterList";
+@import "scss/_AuthorInfo";
+
 body{
     // margin:50px 100px;
     background-color: #FAFAFA;
@@ -6,48 +17,6 @@ body{
 a{
     text-decoration: none;
 }
-// .header{
-//     height: 90px;
-//     width: 1024px;
-//     margin: 0 auto;
-//     .logo {
-//         img{
-//             width:78px;
-//             padding-top: 5px;
-//         }
-//     }
-//     // .wrap{
-//     //     width: 1024px;
-//     //     margin: 0 auto;
-//     // }
-//     .nav_ul{
-//         height: 40px;
-//         font-size: 14px;
-//         list-style: none;
-//         padding-top: 10px;
-//         color: #aaa;
-//         line-height: 38px;
-//         li{
-//             float: left;
-//             a{
-//                 color: #222;
-//                 display: inline-block;
-//                 margin: 0 14px;
-//             }
-//             a:hover {
-//                 color: #4A90E2;
-//                 font-size: 18px;
-//                 border-bottom: solid 2px #4A90E2;
-//             }
-//
-//         }
-//         li.active a{
-//             color: #4A90E2;
-//             font-size: 18px;
-//             border-bottom: solid 2px #4A90E2;
-//         }
-//     }
-// }
 
 
 .container{

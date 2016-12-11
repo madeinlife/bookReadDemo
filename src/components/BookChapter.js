@@ -1,6 +1,4 @@
-'use strict';
 import React from 'react';
-require('styles/BookChapter.scss');
 import Loading from './Loading';
 import {Link} from 'react-router';
 class BookChapter extends React.Component{
@@ -64,7 +62,7 @@ class BookChapter extends React.Component{
     }
     render(){
 
-        if(this.state.loaded == false){
+        if(this.state.loaded === false){
             return <Loading />
         }
         return(
@@ -74,9 +72,8 @@ class BookChapter extends React.Component{
                     <span>《{this.state.chapterInfo.book}》</span>
                 </div>
                 <div className='article-wrap' key={1}
-                    dangerouslySetInnerHTML={{__html:this.state.chapterInfo.content}} >
+                    dangerouslySetInnerHTML={{__html:this.state.chapterInfo.content}} />
 
-                </div>
                 <div className='changeChapter' key={2}>
                     <div className='pre changeButton' key={0}>
                         {this.state.chapterInfo.pre ? <Link to={`/chapter/${this.state.chapterInfo.pre}`}>

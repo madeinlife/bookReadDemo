@@ -1,4 +1,3 @@
-'use strict';
 import React from 'react';
 import BookChapter from './BookChapter';
 import ChapterList from './ChapterList';

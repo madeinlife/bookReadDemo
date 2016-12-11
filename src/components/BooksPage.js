@@ -1,5 +1,4 @@
 import React from 'react';
-require('styles/BooksPage.scss');
 import BookList from './BookList';
 import BooksCategory from './BooksCategory';
 

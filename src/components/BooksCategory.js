@@ -1,6 +1,4 @@
 import React from 'react';
-
-require('styles/BooksCategory.scss')
 import categories from '../data/categories';
 import {Link} from 'react-router';
 class Category extends React.Component{
